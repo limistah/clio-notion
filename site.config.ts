@@ -11,7 +11,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Clio - History on events',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  domain: 'clio.limistah.dev',
   author: 'Aleem Isiaka',
 
   // open graph metadata (optional)
