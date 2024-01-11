@@ -12,7 +12,7 @@ export default siteConfig({
   // basic site info (required)
   name: 'Clio - History on events',
   domain: 'clio.limistah.dev',
-  author: 'Aleem Isiaka',
+  author: 'limistah',
 
   // open graph metadata (optional)
   description:
@@ -28,8 +28,8 @@ export default siteConfig({
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
-  defaultPageIcon: '/favicon.png',
-  defaultPageCover: '/page-cover.jpeg',
+  defaultPageIcon: null,
+  defaultPageCover: '/page-cover.jpg',
   defaultPageCoverPosition: 0.5,
 
   // whether or not to enable support for LQIP preview images (optional)
