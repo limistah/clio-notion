@@ -7,6 +7,7 @@ export default function handler(req, res) {
   // ) {
   //   return res.status(401).end('Unauthorized')
   // }
+  console.log(req.headers)
   exec(
     `curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_KfewZLVrhXIUn4KVQv622WdmEE1l/aNbPQDxuWd`
   )
