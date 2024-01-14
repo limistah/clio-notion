@@ -14,5 +14,5 @@ export default function handler(req, res) {
       console.log({ errr, stderr, stdout })
     }
   )
-  res.status(200).end(`Hello Cron! ${req.headers['Authorization']}`)
+  res.status(200).end(`Hello Cron! ${req.headers['authorization']}`)
 }
