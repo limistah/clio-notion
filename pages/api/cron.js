@@ -1,4 +1,5 @@
 import { exec } from 'child_process';
+import { stderr } from 'process'
 
 
 export default function handler(req, res) {
@@ -9,7 +10,10 @@ export default function handler(req, res) {
   // }
   console.log(req.headers)
   exec(
-    `curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_KfewZLVrhXIUn4KVQv622WdmEE1l/aNbPQDxuWd`
+    `curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_KfewZLVrhXIUn4KVQv622WdmEE1l/aNbPQDxuWd`,
+    (errr, stdout, stderr) => {
+      console.log({ errr, stderr, stdout })
+    }
   )
   res.status(200).end('Hello Cron!')
 }
