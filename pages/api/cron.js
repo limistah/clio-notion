@@ -1,4 +1,5 @@
-import { exec } from 'child_process'
+import { exec } from 'child_process';
+
 
 export default function handler(req, res) {
   // if (
@@ -8,7 +9,7 @@ export default function handler(req, res) {
   // }
 
   exec(
-    `curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_KfewZLVrhXIUn4KVQv622WdmEE1l/aNbPQDxuWd`,
+    `apt install curl && curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_KfewZLVrhXIUn4KVQv622WdmEE1l/aNbPQDxuWd`,
     (errr, stdout, stderr) => {
       console.log({ errr, stderr, stdout })
     }
