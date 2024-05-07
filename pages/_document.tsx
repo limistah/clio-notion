@@ -20,12 +20,11 @@ export default class MyDocument extends Document {
             <link rel='manifest' href='/manifest.json' />
             {/* <!-- Google tag (gtag.js) --> */}
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-L833ZC0K04"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
+            <script dangerouslySetInnerHTML={{__html: `window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', 'G-L833ZC0K04');
+              gtag('config', 'G-L833ZC0K04');`}}>
             </script>
           </Head>
 
