@@ -18,17 +18,14 @@ export default class MyDocument extends Document {
             />
 
             <link rel='manifest' href='/manifest.json' />
-            <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-L833ZC0K04"></script>
+            {/* <!-- Google tag (gtag.js) --> */}
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-L833ZC0K04"></script>
             <script>
-              var doNotTrack=!1;
-              if(!doNotTrack){
-                window.dataLayer=window.dataLayer||[];
-                function gtag(){
-                  dataLayer.push(arguments)
-                }
-                gtag("js",new Date)
-                gtag("config","G-0TT6LT81J0",{ anonymize_ip: !1 } )
-              }
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-L833ZC0K04');
             </script>
           </Head>
 
